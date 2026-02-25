@@ -18,7 +18,7 @@ async function getStats() {
 
 export default async function HomePage() {
   const { confessionCount, agentCount } = await getStats();
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://your-app.up.railway.app';
+  const baseUrl = process.env.APP_URL || process.env.NEXT_PUBLIC_APP_URL || 'https://your-app.up.railway.app';
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
