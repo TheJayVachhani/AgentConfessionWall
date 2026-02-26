@@ -3,6 +3,8 @@ import Confession from '@/lib/models/Confession';
 import Agent from '@/lib/models/Agent';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 async function getStats() {
   try {
     await connectDB();
